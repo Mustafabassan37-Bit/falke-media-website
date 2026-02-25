@@ -9,7 +9,7 @@ export default function Contact() {
             Nehmen Sie <span className="gradient-text">Kontakt</span> auf
           </h2>
           <p className="text-gray text-sm max-w-lg mx-auto">
-            iPhones verkaufen oder kaufen? Wir machen Ihnen ein Angebot.
+            Gebrauchte IT-Geräte verkaufen? Wir machen Ihnen ein faires Angebot.
           </p>
         </div>
 
@@ -20,10 +20,10 @@ export default function Contact() {
               <h3 className="font-bold text-sm mb-4">Kontaktdaten</h3>
               <div className="space-y-3">
                 {[
-                  { icon: MapPin, label: "Musterstraße 1, 12345 Musterstadt" },
-                  { icon: Phone, label: "+49 123 456 7890" },
-                  { icon: Mail, label: "info@falke-media.de" },
-                  { icon: MessageCircle, label: "WhatsApp: +49 123 456 7890" },
+                  { icon: MapPin, label: "Max-Planck-Str. 7, 59423 Unna" },
+                  { icon: Phone, label: "+49 152 01452386" },
+                  { icon: Mail, label: "sahin@prs-germany.de" },
+                  { icon: MessageCircle, label: "WhatsApp: +49 152 01452386" },
                   { icon: Clock, label: "Mo–Fr, 08:00 – 17:00 Uhr" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-center gap-3">
@@ -42,7 +42,7 @@ export default function Contact() {
                 Fotos senden & sofort Angebot erhalten.
               </p>
               <a
-                href="https://wa.me/491234567890"
+                href="https://wa.me/4915201452386"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-white text-primary text-xs font-semibold px-4 py-2 rounded-lg hover:bg-white/90 transition-colors"

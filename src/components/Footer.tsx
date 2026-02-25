@@ -54,10 +54,11 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Kontakt Info</h3>
             <ul className="space-y-3 text-white/50 text-sm">
-              <li>Musterstraße 1, 12345 Musterstadt</li>
+              <li>Max-Planck-Str. 7, 59423 Unna</li>
               <li>Mo–Fr, 08:00 – 17:00 Uhr</li>
-              <li>+49 123 456 7890</li>
-              <li>info@falke-media.de</li>
+              <li>+49 152 01452386</li>
+              <li>sahin@prs-germany.de</li>
+              <li>USt-IdNr: DE292047594</li>
             </ul>
           </div>
         </div>

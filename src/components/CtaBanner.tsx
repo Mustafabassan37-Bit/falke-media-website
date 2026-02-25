@@ -12,7 +12,7 @@ export default function CtaBanner() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="max-w-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-              iPhones verkaufen? Angebot in <span className="text-accent">24 Stunden</span>
+              IT-Geräte verkaufen? Angebot in <span className="text-accent">24 Stunden</span>
             </h2>
             <p className="text-white/70 text-sm">
               Senden Sie uns Fotos per WhatsApp – wir bewerten Ihre Geräte und machen Ihnen ein faires Angebot. Egal ob 10 oder 10.000 Geräte.
@@ -20,7 +20,7 @@ export default function CtaBanner() {
           </div>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
             <a
-              href="https://wa.me/491234567890"
+              href="https://wa.me/4915201452386"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 rounded-xl text-sm font-semibold hover:scale-105 transition-all shadow-lg"
