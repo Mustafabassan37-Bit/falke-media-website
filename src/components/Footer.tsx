@@ -1,3 +1,4 @@
+import Link from "next/link";
 import FalkeLogo from "./FalkeLogo";
 
 const quickLinks = [
@@ -6,8 +7,11 @@ const quickLinks = [
   { label: "Über uns", href: "#about" },
   { label: "Prozess", href: "#process" },
   { label: "Kontakt", href: "#contact" },
-  { label: "Impressum", href: "#" },
-  { label: "Datenschutz", href: "#" },
+];
+
+const legalLinks = [
+  { label: "Impressum", href: "/impressum" },
+  { label: "Datenschutz", href: "/datenschutz" },
 ];
 
 export default function Footer() {
@@ -45,6 +49,16 @@ export default function Footer() {
                   >
                     {link.label}
                   </a>
+                </li>
+              ))}
+              {legalLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-white/50 hover:text-white transition-colors text-sm"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
