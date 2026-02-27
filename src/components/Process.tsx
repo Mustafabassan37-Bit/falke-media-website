@@ -1,35 +1,36 @@
 import Image from "next/image";
+import { getImagePath } from "@/lib/basePath";
 
 const steps = [
   {
     num: "01",
     title: "Ankauf",
     desc: "Bewertung & faire Preise",
-    image: "/images/iphone-stack.jpg",
+    image: getImagePath("/images/iphone-stack.jpg"),
   },
   {
     num: "02",
     title: "Reinigung",
     desc: "Desinfektion & Aufbereitung",
-    image: "/images/cleaning.jpg",
+    image: getImagePath("/images/cleaning.jpg"),
   },
   {
     num: "03",
     title: "Refurbishing",
     desc: "Reparatur & Funktionstest",
-    image: "/images/iphone-repair.jpg",
+    image: getImagePath("/images/iphone-repair.jpg"),
   },
   {
     num: "04",
     title: "Grading",
     desc: "Qualität A+ bis C bewerten",
-    image: "/images/quality-check.jpg",
+    image: getImagePath("/images/quality-check.jpg"),
   },
   {
     num: "05",
     title: "Versand",
     desc: "Verpackung & B2B-Lieferung",
-    image: "/images/packaging.jpg",
+    image: getImagePath("/images/packaging.jpg"),
   },
 ];
 

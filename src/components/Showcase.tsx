@@ -1,12 +1,13 @@
 import Image from "next/image";
+import { getImagePath } from "@/lib/basePath";
 
 const images = [
-  { src: "/images/iphone-stack.jpg", alt: "iPhone Großhandel", label: "Großhandel" },
-  { src: "/images/iphone-repair.jpg", alt: "iPhone Reparatur", label: "Refurbishing" },
-  { src: "/images/warehouse.jpg", alt: "Lager & Logistik", label: "Logistik" },
-  { src: "/images/quality-check.jpg", alt: "Qualitätskontrolle", label: "Qualität" },
-  { src: "/images/packaging.jpg", alt: "Verpackung & Versand", label: "Versand" },
-  { src: "/images/team-work.jpg", alt: "Unser Team", label: "Team" },
+  { src: getImagePath("/images/iphone-stack.jpg"), alt: "iPhone Großhandel", label: "Großhandel" },
+  { src: getImagePath("/images/iphone-repair.jpg"), alt: "iPhone Reparatur", label: "Refurbishing" },
+  { src: getImagePath("/images/warehouse.jpg"), alt: "Lager & Logistik", label: "Logistik" },
+  { src: getImagePath("/images/quality-check.jpg"), alt: "Qualitätskontrolle", label: "Qualität" },
+  { src: getImagePath("/images/packaging.jpg"), alt: "Verpackung & Versand", label: "Versand" },
+  { src: getImagePath("/images/team-work.jpg"), alt: "Unser Team", label: "Team" },
 ];
 
 export default function Showcase() {

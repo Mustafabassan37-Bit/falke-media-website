@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { MessageCircle, ArrowRight } from "lucide-react";
+import { getImagePath } from "@/lib/basePath";
 
 export default function CtaBanner() {
   return (
     <section className="relative py-12 md:py-16 overflow-hidden">
       <div className="absolute inset-0">
-        <Image src="/images/cta-bg.jpg" alt="" fill className="object-cover" />
+        <Image src={getImagePath("/images/cta-bg.jpg")} alt="" fill className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 to-primary/90" />
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
