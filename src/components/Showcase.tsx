@@ -1,13 +1,12 @@
-import Image from "next/image";
 import { getImagePath } from "@/lib/basePath";
 
 const images = [
-  { src: getImagePath("/images/iphone-stack.jpg"), alt: "iPhone Großhandel", label: "Großhandel" },
-  { src: getImagePath("/images/iphone-repair.jpg"), alt: "iPhone Reparatur", label: "Refurbishing" },
-  { src: getImagePath("/images/warehouse.jpg"), alt: "Lager & Logistik", label: "Logistik" },
-  { src: getImagePath("/images/quality-check.jpg"), alt: "Qualitätskontrolle", label: "Qualität" },
-  { src: getImagePath("/images/packaging.jpg"), alt: "Verpackung & Versand", label: "Versand" },
-  { src: getImagePath("/images/team-work.jpg"), alt: "Unser Team", label: "Team" },
+  { src: "/images/iphone-stack.jpg", alt: "iPhone Großhandel", label: "Großhandel" },
+  { src: "/images/iphone-repair.jpg", alt: "iPhone Reparatur", label: "Refurbishing" },
+  { src: "/images/warehouse.jpg", alt: "Lager & Logistik", label: "Logistik" },
+  { src: "/images/quality-check.jpg", alt: "Qualitätskontrolle", label: "Qualität" },
+  { src: "/images/packaging.jpg", alt: "Verpackung & Versand", label: "Versand" },
+  { src: "/images/team-work.jpg", alt: "Unser Team", label: "Team" },
 ];
 
 export default function Showcase() {
@@ -29,11 +28,10 @@ export default function Showcase() {
               key={img.label}
               className="relative group rounded-xl overflow-hidden cursor-pointer aspect-square"
             >
-              <Image
-                src={img.src}
+              <img
+                src={getImagePath(img.src)}
                 alt={img.alt}
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-dark/40 group-hover:bg-dark/70 transition-colors" />
               <div className="absolute inset-0 flex items-center justify-center">

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { getImagePath } from "@/lib/basePath";
 
 const steps = [
@@ -6,31 +5,31 @@ const steps = [
     num: "01",
     title: "Ankauf",
     desc: "Bewertung & faire Preise",
-    image: getImagePath("/images/iphone-stack.jpg"),
+    image: "/images/iphone-stack.jpg",
   },
   {
     num: "02",
     title: "Reinigung",
     desc: "Desinfektion & Aufbereitung",
-    image: getImagePath("/images/cleaning.jpg"),
+    image: "/images/cleaning.jpg",
   },
   {
     num: "03",
     title: "Refurbishing",
     desc: "Reparatur & Funktionstest",
-    image: getImagePath("/images/iphone-repair.jpg"),
+    image: "/images/iphone-repair.jpg",
   },
   {
     num: "04",
     title: "Grading",
     desc: "Qualität A+ bis C bewerten",
-    image: getImagePath("/images/quality-check.jpg"),
+    image: "/images/quality-check.jpg",
   },
   {
     num: "05",
     title: "Versand",
     desc: "Verpackung & B2B-Lieferung",
-    image: getImagePath("/images/packaging.jpg"),
+    image: "/images/packaging.jpg",
   },
 ];
 
@@ -53,11 +52,10 @@ export default function Process() {
             <div key={step.num} className="relative group">
               {/* Image */}
               <div className="relative rounded-xl overflow-hidden mb-3 aspect-[4/3]">
-                <Image
-                  src={step.image}
+                <img
+                  src={getImagePath(step.image)}
                   alt={step.title}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/70 to-dark/10" />
                 <div className="absolute top-2 left-2 w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center text-xs font-bold">

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 import { getImagePath } from "@/lib/basePath";
 
@@ -26,20 +25,16 @@ export default function About() {
           {/* Left - Images */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <Image
+              <img
                 src={getImagePath("/images/team-work.jpg")}
                 alt="Falke-Media Team"
-                width={600}
-                height={380}
                 className="object-cover w-full h-[280px] md:h-[380px]"
               />
             </div>
             <div className="absolute -bottom-4 -right-4 w-40 md:w-48 rounded-xl overflow-hidden shadow-xl border-4 border-white">
-              <Image
+              <img
                 src={getImagePath("/images/iphone-repair.jpg")}
                 alt="Refurbishing"
-                width={200}
-                height={140}
                 className="object-cover w-full h-[100px] md:h-[130px]"
               />
             </div>
