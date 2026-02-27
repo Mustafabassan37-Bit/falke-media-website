@@ -1,4 +1,4 @@
-const basePath = process.env.NODE_ENV === "production" ? "/falke-media-website" : "";
+const basePath = "/falke-media-website";
 
 export function getImagePath(path: string): string {
   return `${basePath}${path}`;
